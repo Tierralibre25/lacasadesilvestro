@@ -7,7 +7,7 @@ const Conocenos: React.FC = () => (
       La Casa de Silvestro está naciendo como un refugio especial para gatos libres, un lugar donde cada animal pueda vivir protegido, respetado y sin jaulas.
       </p>
       <p className="mb-4">
-      Estamos al inicio de nuestro camino: en un terreno de 1,45 hectáreas en Villalonga (Valencia), estamos construyendo paso a paso un espacio seguro con áreas verdes, refugios y cuidados dedicados.
+      Estamos al inicio de nuestro camino: en un terreno de 1,49 hectáreas en Villalonga (Valencia), estamos construyendo paso a paso un espacio seguro con áreas verdes, refugios y cuidados dedicados.
       </p>
       <p className="mb-4">
         <strong>Libertad y bienestar</strong>: queremos ofrecer a nuestros gatos espacios naturales para explorar y un entorno sereno.
