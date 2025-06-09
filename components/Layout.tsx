@@ -1,9 +1,10 @@
 // components/Layout.tsx
-import React, { ReactNode } from 'react'
-import Head from 'next/head'
+import React, { ReactNode } from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
 
 interface LayoutProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps) => {
@@ -21,7 +22,7 @@ const Layout = ({ children }: LayoutProps) => {
       <header className="p-4 flex justify-between bg-cream">
         <h1 className="text-xl font-bold text-green">TIERRA LIBRE</h1>
         <nav className="space-x-4 text-dark">
-          <a href="#philosophy" className="hover:underline">Nuestra Filosofía</a>
+          <Link href="/filosofia" className="hover:underline">Nuestra Filosofía</Link>
           <a href="#hosts" className="hover:underline">Nuestros Huéspedes</a>
           <a href="#family" className="hover:underline">Familia</a>
           <a href="#support" className="hover:underline">Apóyanos</a>
@@ -34,7 +35,7 @@ const Layout = ({ children }: LayoutProps) => {
         © 2025 Cooperativa Tierra Libre
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
