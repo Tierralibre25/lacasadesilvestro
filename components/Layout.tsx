@@ -36,8 +36,8 @@ const Layout = ({ children }: LayoutProps) => {
 
   <div className="mt-2">
   <img
-  src="https://hits.donaldzou.dev/hits?url=https://www.lacasadesilvestro.com&title=Visitantes&icon=cat&edge_flat=false"
-  alt="Contador de visitas"
+  src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fwww.lacasadesilvestro.com&label=Visitas&icon=emoji-heart-eyes-fill&color=%23198754"
+  alt="Visitas"
 />
   </div>
 </footer>
