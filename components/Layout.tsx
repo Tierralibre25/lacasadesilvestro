@@ -25,7 +25,7 @@ const Layout = ({ children }: LayoutProps) => {
           <Link href="/filosofia" className="hover:underline">Nuestra Filosofía</Link>
           <a href="#hosts" className="hover:underline">Nuestros Huéspedes</a>
           <a href="#family" className="hover:underline">Familia</a>
-          <a href="#support" className="hover:underline">Apóyanos</a>
+          <Link href="/ayudanos" className="hover:underline">Apóyanos</Link>
         </nav>
       </header>
 
