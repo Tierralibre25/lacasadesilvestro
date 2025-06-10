@@ -20,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
       </Head>
 
       <header className="p-4 flex justify-between bg-cream">
-        <h1 className="text-xl font-bold text-green">TIERRA LIBRE</h1>
+      <Link href="/" className="text-xl font-bold text-green hover:underline">TIERRA LIBRE</Link>
         <nav className="space-x-4 text-dark">
           <Link href="/filosofia" className="hover:underline">Nuestra Filosofía</Link>
           <a href="#hosts" className="hover:underline">Nuestros Huéspedes</a>
