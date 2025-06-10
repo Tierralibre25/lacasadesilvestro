@@ -24,7 +24,7 @@ export default function Ayudanos() {
           Tu aporte, grande o pequeño, se convierte en pienso, atención veterinaria y
           refugio. <br />
           <Link
-            href="https://www.gofundme.com/f/la-casa-de-silvestro"
+            href="https://gofund.me/e3d03c4f"
             target="_blank"
             className="text-green underline font-semibold"
           >
