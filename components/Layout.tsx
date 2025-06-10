@@ -34,14 +34,15 @@ const Layout = ({ children }: LayoutProps) => {
       <footer className="p-4 text-center text-sm text-dark bg-cream">
   © 2025 Cooperativa Tierra Libre
 
-  <div className="mt-2">
+  {/* forza una riga nuova */}
+  <div className="mt-2 flex justify-center">
     <img
-      className="mx-auto"                           {/*  ←  questa classe   */}
       src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fwww.lacasadesilvestro.com&label=Visitas&icon=emoji-heart-eyes-fill&color=%23198754"
       alt="Visitas"
     />
   </div>
 </footer>
+
 
 
     </>
