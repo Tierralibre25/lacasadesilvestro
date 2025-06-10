@@ -32,8 +32,16 @@ const Layout = ({ children }: LayoutProps) => {
       <main>{children}</main>
 
       <footer className="p-4 text-center text-sm text-dark bg-cream">
-        © 2025 Cooperativa Tierra Libre
-      </footer>
+  © 2025 Cooperativa Tierra Libre
+
+  <div className="mt-2">
+    <img
+      src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flacasadesilvestro.com&count_bg=%23F9C846&title_bg=%23000000&icon=cat&icon_color=%23FFFFFF&title=Visitantes&edge_flat=false"
+      alt="Contador de visitas"
+    />
+  </div>
+</footer>
+
     </>
   );
 };
