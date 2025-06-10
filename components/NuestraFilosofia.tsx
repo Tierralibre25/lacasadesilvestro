@@ -19,7 +19,7 @@ export default function NuestraFilosofia() {
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-10 mt-12">
             <div className="flex flex-col items-center">
-              <img src="https://img.icons8.com/color/96/tree.png" alt="Libertad" className="mb-2 w-16 h-16" />
+            <img src="https://cdn-icons-png.flaticon.com/128/427/427735.png" alt="Libertad" className="mb-2 w-16 h-16" />
               <p className="font-semibold text-green-900">Libertad<br /><span className="font-normal">con cuidado</span></p>
             </div>
             <div className="flex flex-col items-center">
