@@ -20,31 +20,43 @@ const Layout = ({ children }: LayoutProps) => {
       </Head>
 
       <header className="p-4 flex justify-between bg-cream">
-      <Link href="/" className="text-xl font-bold text-green hover:underline">TIERRA LIBRE</Link>
+        {/* logo → home */}
+        <Link href="/" className="text-xl font-bold text-green hover:underline">
+          TIERRA LIBRE
+        </Link>
+
+        {/* barra di navigazione */}
         <nav className="space-x-4 text-dark">
-          <Link href="/filosofia" className="hover:underline">Nuestra Filosofía</Link>
-          <a href="#hosts" className="hover:underline">Nuestros Huéspedes</a>
-          <a href="#family" className="hover:underline">Familia</a>
-          <Link href="/ayudanos" className="hover:underline">Apóyanos</Link>
+          <Link href="/filosofia" className="hover:underline">
+            Nuestra Filosofía
+          </Link>
+          <Link href="#hosts" className="hover:underline">
+            Nuestros Huéspedes
+          </Link>
+          <Link href="#family" className="hover:underline">
+            Familia
+          </Link>
+          <Link href="/ayudanos" className="hover:underline">
+            Apóyanos
+          </Link>
+          <Link href="/contacto" className="hover:underline">
+            Contacto
+          </Link>
         </nav>
       </header>
 
       <main>{children}</main>
 
+      {/* footer con contatore visite centrato */}
       <footer className="p-4 text-center text-sm text-dark bg-cream">
-  © 2025 Cooperativa Tierra Libre
-
-  {/* forza una riga nuova */}
-  <div className="mt-2 flex justify-center">
-    <img
-      src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fwww.lacasadesilvestro.com&label=Visitas&icon=emoji-heart-eyes-fill&color=%23198754"
-      alt="Visitas"
-    />
-  </div>
-</footer>
-
-
-
+        © 2025 Cooperativa Tierra Libre
+        <div className="mt-2 flex justify-center">
+          <img
+            src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fwww.lacasadesilvestro.com&label=Visitas&icon=emoji-heart-eyes-fill&color=%23198754"
+            alt="Visitas"
+          />
+        </div>
+      </footer>
     </>
   );
 };
