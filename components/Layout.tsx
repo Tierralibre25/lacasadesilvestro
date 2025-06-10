@@ -35,12 +35,14 @@ const Layout = ({ children }: LayoutProps) => {
   © 2025 Cooperativa Tierra Libre
 
   <div className="mt-2">
-  <img
-  src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fwww.lacasadesilvestro.com&label=Visitas&icon=emoji-heart-eyes-fill&color=%23198754"
-  alt="Visitas"
-/>
+    <img
+      className="mx-auto"                           {/*  ←  questa classe   */}
+      src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fwww.lacasadesilvestro.com&label=Visitas&icon=emoji-heart-eyes-fill&color=%23198754"
+      alt="Visitas"
+    />
   </div>
 </footer>
+
 
     </>
   );
