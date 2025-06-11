@@ -27,22 +27,11 @@ const Layout = ({ children }: LayoutProps) => {
 
         {/* barra di navigazione */}
         <nav className="space-x-4 text-dark">
-          <Link href="/filosofia" className="hover:underline">
-            Nuestra Filosofía
-          </Link>
-          <Link href="#hosts" className="hover:underline">
-            Nuestros Huéspedes
-          </Link>
-          <Link href="#family" className="hover:underline">
-            Familia
-          </Link>
-          <Link href="/ayudanos" className="hover:underline">
-            Apóyanos
-          </Link>
-          <Link href="/contacto" className="hover:underline">
-            Contacto
-          </Link>
-        </nav>
+  <Link href="/filosofia" className="hover:underline">Nuestra Filosofía</Link>
+  <Link href="/familia" className="hover:underline">Familia</Link>
+  <Link href="/ayudanos" className="hover:underline">Apóyanos</Link>
+  <Link href="/contacto" className="hover:underline">Contacto</Link>
+</nav>
       </header>
 
       <main>{children}</main>
