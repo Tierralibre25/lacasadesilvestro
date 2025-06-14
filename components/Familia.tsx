@@ -15,26 +15,27 @@ const gatos = [
     foto: '/gatos/ringhio.jpg',
     nombre: 'Ringhio',
     nota: 'El jefe (1 año y 2 meses)',
-  }
+  },
   {
     foto: '/gatos/hambre.jpg',
     nombre: 'Hambre',
     nota: 'El tio que quiere siempre comida y jugar (1 año y 1 mese)',
-  }
+  },
   {
     foto: '/gatos/ultimo.jpg',
     nombre: 'Ultimo',
     nota: 'El dulce juguetòn (1 año y 1 mese)',
-  }
+  },
   {
     foto: '/gatos/pecoso.jpg',
     nombre: 'Pecoso',
     nota: 'El mejor niñero de todos (1 año y 2 meses)',
+  },
     {
         foto: '/gatos/pantalone.jpg',
         nombre: 'Pantalone',
         nota: 'El Rey del reino de arriba (1 año y 2 meses)',
-      }
+      },
 {
     foto: '/gatos/venuso.jpg',
     nombre: 'Venuso',
