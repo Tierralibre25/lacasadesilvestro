@@ -10,13 +10,13 @@ interface StatsData {
 const Stats: React.FC = () => {
   const [data, setData] = useState<StatsData>({
     permanent: 26,
-    newArrivals: 9,
+    newArrivals: 13,
     totalArea: 1.45
   })
 
   useEffect(() => {
     // Qui potrai poi collegare i dati reali da Strapi
-    setData({ permanent: 26, newArrivals: 9, totalArea: 1.49 })
+    setData({ permanent: 26, newArrivals: 13, totalArea: 1.49 })
   }, [])
 
   return (
