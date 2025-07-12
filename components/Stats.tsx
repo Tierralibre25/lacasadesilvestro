@@ -16,7 +16,7 @@ const Stats: React.FC = () => {
 
   useEffect(() => {
     // Qui potrai poi collegare i dati reali da Strapi
-    setData({ permanent: 21, newArrivals: 9, totalArea: 1.49 })
+    setData({ permanent: 26, newArrivals: 9, totalArea: 1.49 })
   }, [])
 
   return (
