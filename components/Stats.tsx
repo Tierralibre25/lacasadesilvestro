@@ -9,7 +9,7 @@ interface StatsData {
 
 const Stats: React.FC = () => {
   const [data, setData] = useState<StatsData>({
-    permanent: 21,
+    permanent: 26,
     newArrivals: 9,
     totalArea: 1.45
   })
