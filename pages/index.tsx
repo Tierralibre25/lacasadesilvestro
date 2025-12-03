@@ -19,7 +19,10 @@ export default function Home() {
       </Head>
        <div className="text-center mt-10 mb-8">
   <Link href="/blog">
-    <a className="inline-block bg-[#0b5e35] text-white text-lg font-semibold px-6 py-3 rounded-xl shadow-xl hover:bg-[#094d2c] transition">
+    <a className="inline-block bg-[#0b5e35] text-white text-lg font-semibold px-7 py-3 rounded-xl 
+      shadow-[0_6px_12px_rgba(0,0,0,0.25),0_-3px_6px_rgba(255,255,255,0.25)]
+      hover:shadow-[0_4px_8px_rgba(0,0,0,0.35),0_-2px_4px_rgba(255,255,255,0.2)]
+      transition">
       Nuestro Blog
     </a>
   </Link>
@@ -32,6 +35,7 @@ export default function Home() {
     </>
   )
 }
+
 
 
 
