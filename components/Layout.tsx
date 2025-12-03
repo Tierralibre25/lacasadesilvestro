@@ -31,6 +31,7 @@ const Layout = ({ children }: LayoutProps) => {
   <Link href="/familia" className="hover:underline">Familia</Link>
   <Link href="/ayudanos" className="hover:underline">Apóyanos</Link>
   <Link href="/contacto" className="hover:underline">Contacto</Link>
+  <Link href="/blog">Blog</Link>
 </nav>
       </header>
 
@@ -51,3 +52,4 @@ const Layout = ({ children }: LayoutProps) => {
 };
 
 export default Layout;
+
