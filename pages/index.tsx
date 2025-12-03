@@ -17,9 +17,9 @@ export default function Home() {
           content="Refugio felino sin jaulas en Villalonga (Valencia). Cuidamos a más de 20 gatos callejeros ofreciéndoles comida, refugio y atención veterinaria. Ayúdanos con tu donación o colaboración."
         />
       </Head>
-       <div className="text-center mt-16 mb-12">
+       <div className="text-center mt-10 mb-8">
   <Link href="/blog">
-    <a className="inline-block bg-green-700 text-white text-xl font-semibold px-10 py-4 rounded-xl shadow-lg hover:bg-green-800 transition">
+    <a className="inline-block bg-[#0b5e35] text-white text-lg font-semibold px-6 py-3 rounded-xl shadow-xl hover:bg-[#094d2c] transition">
       Nuestro Blog
     </a>
   </Link>
@@ -32,5 +32,6 @@ export default function Home() {
     </>
   )
 }
+
 
 
