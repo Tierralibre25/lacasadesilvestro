@@ -74,7 +74,7 @@ export default function SantuarioFelinoVillalonga() {
           💛 Si quieres apoyar nuestro santuario felino, puedes hacerlo a través de 
           nuestra campaña de GoFundMe:&nbsp;
           <a
-            href="https://www.gofundme.com"
+            href="https://gofund.me/6f301a41"
             className="text-blue-700 underline font-semibold"
           >
             La Casa de Silvestro – Santuario felino
