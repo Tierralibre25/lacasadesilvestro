@@ -11,7 +11,7 @@ export default function SantuarioFelinoVillalonga() {
       </p>
 
       <img
-        src="/img/blog/articulo_1.jpg"
+        src="/images/blog/articulo_1.jpg"
         alt="Santuario felino La Casa de Silvestro"
         className="w-full rounded-xl shadow-lg mb-8"
       />
