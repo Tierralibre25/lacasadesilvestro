@@ -12,7 +12,7 @@ export default function SantuarioFelinoVillalonga() {
       <p className="text-gray-500 mb-8">Publicado el 3 de diciembre de 2025</p>
 
       <img
-        src="/articolo_1.jpg"
+        src="images/blog/articolo_1.jpg"
         alt="Santuario felino La Casa de Silvestro"
         className="w-full rounded-xl shadow-lg mb-8"
       />
