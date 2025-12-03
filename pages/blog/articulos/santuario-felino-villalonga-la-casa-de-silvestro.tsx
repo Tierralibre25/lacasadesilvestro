@@ -84,16 +84,20 @@ export default function SantuarioFelinoVillalonga() {
 
   <h3 className="text-lg font-semibold mb-4">Comparte este artículo</h3>
 
-  <div className="flex flex-wrap justify-center gap-4">
+  <div className="flex flex-wrap justify-center gap-3">
 
-    {/* WhatsApp */}
+    {/* Instagram (no share automático → abre IG) */}
     <a
-      href={`https://api.whatsapp.com/send?text=📝 Mira este artículo: ${typeof window !== "undefined" ? window.location.href : ""}`}
+      href="https://instagram.com"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700 transition"
+      className="flex items-center gap-2 bg-pink-600 text-white px-3 py-2 rounded-lg shadow hover:bg-pink-700 transition text-sm"
     >
-      WhatsApp
+      {/* ICONA IG */}
+      <svg width="16" height="16" fill="white" viewBox="0 0 24 24">
+        <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.49 4.49 0 0 0 12 7.5zm0 7A2.5 2.5 0 1 1 14.5 12 2.5 2.5 0 0 1 12 14.5zm4.75-7.88a1.12 1.12 0 1 1-1.12-1.12 1.12 1.12 0 0 1 1.12 1.12z"/>
+      </svg>
+      Instagram
     </a>
 
     {/* Facebook */}
@@ -101,45 +105,54 @@ export default function SantuarioFelinoVillalonga() {
       href={`https://www.facebook.com/sharer/sharer.php?u=${typeof window !== "undefined" ? window.location.href : ""}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
+      className="flex items-center gap-2 bg-blue-600 text-white px-3 py-2 rounded-lg shadow hover:bg-blue-700 transition text-sm"
     >
+      {/* ICONA FB */}
+      <svg width="16" height="16" fill="white" viewBox="0 0 24 24">
+        <path d="M22 12a10 10 0 1 0-11.5 9.87v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.62-1.3 1.25V11h2.3l-.37 3h-1.93v7A10 10 0 0 0 22 12"/>
+      </svg>
       Facebook
     </a>
 
-    {/* Twitter/X */}
+    {/* X / Twitter */}
     <a
-      href={`https://twitter.com/intent/tweet?url=${typeof window !== "undefined" ? window.location.href : ""}&text=Mira este artículo de La Casa de Silvestro`}
+      href={`https://twitter.com/intent/tweet?url=${typeof window !== "undefined" ? window.location.href : ""}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-black text-white px-4 py-2 rounded-lg shadow hover:bg-gray-800 transition"
+      className="flex items-center gap-2 bg-black text-white px-3 py-2 rounded-lg shadow hover:bg-gray-900 transition text-sm"
     >
-      X / Twitter
+      {/* ICONA X */}
+      <svg width="16" height="16" fill="white" viewBox="0 0 24 24">
+        <path d="M18.36 2H21l-6.92 7.92L22 22h-7.07l-4.9-6.32L3.8 22H1l7.52-8.6L2 2h7.07l4.58 5.9L18.36 2z"/>
+      </svg>
+      X
+    </a>
+
+    {/* WhatsApp */}
+    <a
+      href={`https://api.whatsapp.com/send?text=${typeof window !== "undefined" ? window.location.href : ""}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 bg-green-600 text-white px-3 py-2 rounded-lg shadow hover:bg-green-700 transition text-sm"
+    >
+      {/* ICONA WA */}
+      <svg width="16" height="16" fill="white" viewBox="0 0 24 24">
+        <path d="M20.5 3.4A11.8 11.8 0 0 0 12 0 11.8 11.8 0 0 0 0 11.8a11.8 11.8 0 0 0 2 6.5L0 24l6-2a12 12 0 0 0 6 1.6h.1A11.8 11.8 0 0 0 24 11.8 11.8 11.8 0 0 0 20.5 3.4zM12.1 21a9.4 9.4 0 0 1-4.8-1.4l-.3-.1-3.6 1.2 1.2-3.5-.2-.3A9.7 9.7 0 0 1 2.5 12 9.6 9.6 0 0 1 12 2.4a9.5 9.5 0 0 1 9.5 9.6A9.6 9.6 0 0 1 12.1 21zM17 14.6c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1-.2.3-.6.7-.7.8-.1.1-.3.2-.5.1a7.6 7.6 0 0 1-3.5-3c-.3-.4-.4-.6-.3-.8.1-.1.1-.2.2-.3h.1c.1-.1.1-.2.2-.3l.1-.2c.1-.2 0-.3 0-.4 0-.1-.5-1.2-.7-1.6-.2-.4-.4-.3-.6-.3-.1 0-.2 0-.3-.1h-.3c-.1 0-.4.1-.7.3-.2.2-.9.9-.9 2.1s1 2.4 1.1 2.5c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.2.2 1.6.1.5-.1 1.2-.5 1.4-1s.2-.9.2-1-.2-.2-.4-.3z"/>
+      </svg>
+      WhatsApp
     </a>
 
     {/* Email */}
     <a
-      href={`mailto:?subject=Artículo interesante&body=Mira este link: ${typeof window !== "undefined" ? window.location.href : ""}`}
-      className="bg-gray-500 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-600 transition"
+      href={`mailto:?subject=Artículo interesante&body=${typeof window !== "undefined" ? window.location.href : ""}`}
+      className="flex items-center gap-2 bg-gray-600 text-white px-3 py-2 rounded-lg shadow hover:bg-gray-700 transition text-sm"
     >
+      {/* ICONA EMAIL */}
+      <svg width="16" height="16" fill="white" viewBox="0 0 24 24">
+        <path d="M12 13.5 1.5 6h21L12 13.5zM1.5 7.5V18h21V7.5l-10.5 7-10.5-7z"/>
+      </svg>
       Email
     </a>
 
-    {/* Copiar enlace */}
-    <button
-      onClick={() => {
-        navigator.clipboard.writeText(window.location.href);
-        alert("Enlace copiado ✔️");
-      }}
-      className="bg-yellow-600 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-700 transition"
-    >
-      Copiar enlace
-    </button>
-
   </div>
 </div>
-
-        </p>
-      </div>
-    </div>
-  );
-}
