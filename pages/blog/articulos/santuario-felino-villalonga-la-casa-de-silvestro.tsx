@@ -79,6 +79,65 @@ export default function SantuarioFelinoVillalonga() {
           >
             La Casa de Silvestro – Santuario felino
           </a>
+          {/* SHARE BUTTONS */}
+<div className="mt-10 p-6 bg-white rounded-xl shadow-md text-center">
+
+  <h3 className="text-lg font-semibold mb-4">Comparte este artículo</h3>
+
+  <div className="flex flex-wrap justify-center gap-4">
+
+    {/* WhatsApp */}
+    <a
+      href={`https://api.whatsapp.com/send?text=📝 Mira este artículo: ${typeof window !== "undefined" ? window.location.href : ""}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-green-600 text-white px-4 py-2 rounded-lg shadow hover:bg-green-700 transition"
+    >
+      WhatsApp
+    </a>
+
+    {/* Facebook */}
+    <a
+      href={`https://www.facebook.com/sharer/sharer.php?u=${typeof window !== "undefined" ? window.location.href : ""}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
+    >
+      Facebook
+    </a>
+
+    {/* Twitter/X */}
+    <a
+      href={`https://twitter.com/intent/tweet?url=${typeof window !== "undefined" ? window.location.href : ""}&text=Mira este artículo de La Casa de Silvestro`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-black text-white px-4 py-2 rounded-lg shadow hover:bg-gray-800 transition"
+    >
+      X / Twitter
+    </a>
+
+    {/* Email */}
+    <a
+      href={`mailto:?subject=Artículo interesante&body=Mira este link: ${typeof window !== "undefined" ? window.location.href : ""}`}
+      className="bg-gray-500 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-600 transition"
+    >
+      Email
+    </a>
+
+    {/* Copiar enlace */}
+    <button
+      onClick={() => {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Enlace copiado ✔️");
+      }}
+      className="bg-yellow-600 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-700 transition"
+    >
+      Copiar enlace
+    </button>
+
+  </div>
+</div>
+
         </p>
       </div>
     </div>
