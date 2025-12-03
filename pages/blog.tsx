@@ -14,7 +14,7 @@ export default function Blog() {
 
         {/* IMAGEN A LA IZQUIERDA */}
         <img
-          src="/img/blog/articolo_1.jpg"
+          src="/images/blog/articolo_1.jpg"
           alt="Santuario felino en Villalonga – La Casa de Silvestro"
           className="w-full md:w-1/3 rounded-lg object-cover"
         />
