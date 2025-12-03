@@ -17,9 +17,14 @@ const Layout = ({ children }: LayoutProps) => {
           content="Un refugio sin jaulas, donde la libertad es de casa."
         />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+        <meta property="og:type" content="article" />
+<meta property="og:site_name" content="La Casa de Silvestro" />
+<meta property="og:title" content="Santuario felino en Villalonga – La Casa de Silvestro" />
+<meta property="og:description" content="Descubre por qué los santuarios felinos son esenciales hoy y cómo La Casa de Silvestro ofrece un hogar seguro y ético a decenas de gatos." />
+<meta property="og:image" content="https://www.lacasadesilvestro.com/images/blog/articolo_1.jpg" />
+<meta property="og:url" content="https://www.lacasadesilvestro.com/blog/articulos/santuario-felino-villalonga-la-casa-de-silvestro" />
       <header className="p-4 flex justify-between bg-cream">
+      </Head>
         {/* logo → home */}
         <Link href="/" className="text-xl font-bold text-green hover:underline">
           TIERRA LIBRE
@@ -52,4 +57,5 @@ const Layout = ({ children }: LayoutProps) => {
 };
 
 export default Layout;
+
 
