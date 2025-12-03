@@ -71,60 +71,60 @@ export default function SantuarioFelinoVillalonga() {
         abierta a cualquiera que quiera echar una mano.
       </p>
 
-      {/* BLOCCO CONDIVIDI */}
-      <div className="mt-10 p-6 bg-white rounded-xl shadow-md text-center">
-        <h3 className="text-lg font-semibold mb-4">Comparte este artículo</h3>
+     {/* SHARE ICONS */}
+<div className="mt-10 p-6 bg-white rounded-xl shadow-md text-center">
 
-        <div className="flex flex-wrap justify-center gap-3">
-          {/* WhatsApp */}
-          <a
-            href={`https://api.whatsapp.com/send?text=Mira este artículo: ${articleUrl}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-600 text-white px-3 py-2 rounded-lg shadow text-sm hover:bg-green-700 transition"
-          >
-            🟢 WhatsApp
-          </a>
+  <h3 className="text-lg font-semibold mb-4">Comparte este artículo</h3>
 
-          {/* Facebook */}
-          <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${articleUrl}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-3 py-2 rounded-lg shadow text-sm hover:bg-blue-700 transition"
-          >
-            📘 Facebook
-          </a>
+  <div className="flex justify-center gap-4">
 
-          {/* X / Twitter */}
-          <a
-            href={`https://twitter.com/intent/tweet?url=${articleUrl}&text=Mira este artículo de La Casa de Silvestro`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-black text-white px-3 py-2 rounded-lg shadow text-sm hover:bg-gray-900 transition"
-          >
-            ✖️ X
-          </a>
+    {/* WhatsApp */}
+    <a
+      href={`https://api.whatsapp.com/send?text=${articleUrl}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 rounded-full bg-green-500 hover:bg-green-600 transition shadow"
+    >
+      <img src="/icons/whatsapp.svg" alt="WhatsApp" className="w-6 h-6" />
+    </a>
 
-          {/* Instagram (non può condividere direttamente dal browser) */}
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-pink-600 text-white px-3 py-2 rounded-lg shadow text-sm hover:bg-pink-700 transition"
-          >
-            📸 Instagram
-          </a>
+    {/* Facebook */}
+    <a
+      href={`https://www.facebook.com/sharer/sharer.php?u=${articleUrl}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 rounded-full bg-blue-600 hover:bg-blue-700 transition shadow"
+    >
+      <img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
+    </a>
 
-          {/* Email */}
-          <a
-            href={`mailto:?subject=Artículo interesante&body=${articleUrl}`}
-            className="bg-gray-600 text-white px-3 py-2 rounded-lg shadow text-sm hover:bg-gray-700 transition"
-          >
-            ✉️ Email
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
+    {/* X / Twitter */}
+    <a
+      href={`https://twitter.com/intent/tweet?url=${articleUrl}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 rounded-full bg-black hover:bg-gray-900 transition shadow"
+    >
+      <img src="/icons/x.svg" alt="X" className="w-6 h-6" />
+    </a>
+
+    {/* Instagram */}
+    <a
+      href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 hover:opacity-90 transition shadow"
+    >
+      <img src="/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
+    </a>
+
+    {/* Email */}
+    <a
+      href={`mailto:?subject=Artículo interesante&body=${articleUrl}`}
+      className="p-2 rounded-full bg-gray-600 hover:bg-gray-700 transition shadow"
+    >
+      <img src="/icons/mail.svg" alt="Email" className="w-6 h-6" />
+    </a>
+
+  </div>
+</div>
