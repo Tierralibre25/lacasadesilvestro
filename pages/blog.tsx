@@ -9,7 +9,7 @@ const posts = [
     excerpt:
       "Por qué hoy los santuarios felinos son más necesarios que nunca y cómo La Casa de Silvestro ofrece un hogar seguro y ético a decenas de gatos.",
     image: "/images/blog/articolo_1.jpg",
-    date: "3 de diciembre de 2025",
+    date: "4 de diciembre de 2025",
   },
   {
     slug: "terreno-hogar-renacer-gatos-traumatizados-la-casa-de-silvestro",
