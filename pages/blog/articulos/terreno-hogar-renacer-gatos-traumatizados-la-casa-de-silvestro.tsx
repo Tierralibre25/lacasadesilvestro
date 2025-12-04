@@ -5,6 +5,32 @@ const articleUrl =
   "https://www.lacasadesilvestro.com/blog/articulos/terreno-hogar-renacer-gatos-traumatizados-la-casa-de-silvestro";
 
 export default function TerrenoHogarGatosTraumatizados() {
+  export default function SantuarioFelinoVillalonga() {
+  const handleInstagramClick = async (e: any) => {
+    e.preventDefault();
+
+    try {
+      if (
+        typeof navigator !== "undefined" &&
+        (navigator as any).clipboard &&
+        (navigator as any).clipboard.writeText
+      ) {
+        await (navigator as any).clipboard.writeText(articleUrl);
+        alert(
+          "Link copiado. Ahora pégalo en tu historia o en la bio de Instagram 🐾"
+        );
+      }
+
+      if (typeof window !== "undefined") {
+        window.open("https://instagram.com", "_blank");
+      }
+    } catch (_err) {
+      if (typeof window !== "undefined") {
+        window.open("https://instagram.com", "_blank");
+      }
+    }
+  };
+
   return (
     <>
       {/* META SPECÍFICOS DE ESTE ARTÍCULO */}
@@ -215,19 +241,15 @@ export default function TerrenoHogarGatosTraumatizados() {
               <img src="/icons/x.svg" alt="X" className="w-5 h-5" />
             </a>
 
-            {/* Instagram */}
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-11 h-11 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow hover:opacity-90 transition"
-            >
-              <img
-                src="/icons/instagram.svg"
-                alt="Instagram"
-                className="w-5 h-5"
-              />
-            </a>
+           {/* Instagram – copia link y abre la app */}
+<a
+  href="https://instagram.com"
+  onClick={handleInstagramClick}
+  className="w-11 h-11 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow hover:opacity-90 transition cursor-pointer"
+>
+  <img src="/icons/instagram.svg" alt="Instagram" className="w-5 h-5" />
+</a>
+
 
             {/* Email */}
             <a
