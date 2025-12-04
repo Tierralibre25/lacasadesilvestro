@@ -1,43 +1,69 @@
+import React from "react";
 import Link from "next/link";
 
-export default function Blog() {
-  return (
-    <main className="max-w-5xl mx-auto px-4 py-12">
+const posts = [
+  {
+    slug: "santuario-felino-villalonga-la-casa-de-silvestro",
+    title:
+      "Santuario felino en Villalonga: por qué La Casa de Silvestro es indispensable hoy",
+    excerpt:
+      "Por qué hoy los santuarios felinos son más necesarios que nunca y cómo La Casa de Silvestro ofrece un hogar seguro y ético a decenas de gatos.",
+    image: "/images/blog/articolo_1.jpg",
+    date: "3 de diciembre de 2025",
+  },
+  {
+    slug: "terreno-hogar-renacer-gatos-traumatizados-la-casa-de-silvestro",
+    title:
+      "Cuando un terreno se convierte en hogar: el renacer de los gatos traumatizados en La Casa de Silvestro",
+    excerpt:
+      "Cómo un terreno sin jaulas y en plena naturaleza permite que gatos traumatizados vuelvan a confiar, jugar y vivir sin miedo.",
+    image: "/images/blog/articolo_2.jpg",
+    date: "3 de diciembre de 2025",
+  },
+];
 
-      {/* TÍTULO CENTRADO */}
-      <h1 className="text-4xl font-bold mb-10 text-center">
+export default function BlogPage() {
+  return (
+    <div className="max-w-5xl mx-auto px-4 py-12">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
         Nuestro Blog
       </h1>
 
-      {/* PREVIEW DEL ARTÍCULO 1 */}
-      <article className="bg-white rounded-xl shadow-md p-4 mb-6 flex flex-col md:flex-row gap-4 items-start">
+      <div className="space-y-8">
+        {posts.map((post) => (
+          <article
+            key={post.slug}
+            className="bg-white rounded-2xl shadow flex flex-col md:flex-row overflow-hidden"
+          >
+            <div className="md:w-1/3">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
 
-        {/* IMAGEN A LA IZQUIERDA */}
-        <img
-          src="/images/blog/articolo_1.jpg"
-          alt="Santuario felino en Villalonga – La Casa de Silvestro"
-          className="w-full md:w-1/3 rounded-lg object-cover"
-        />
+            <div className="md:w-2/3 p-6 flex flex-col justify-between">
+              <div>
+                <p className="text-xs text-gray-500 mb-2">{post.date}</p>
+                <h2 className="text-xl md:text-2xl font-semibold mb-3">
+                  {post.title}
+                </h2>
+                <p className="text-gray-700 mb-4">{post.excerpt}</p>
+              </div>
 
-        {/* TEXTO A LA DERECHA */}
-        <div className="flex-1">
-          <h2 className="text-2xl font-semibold mb-2">
-            Santuario felino en Villalonga: por qué La Casa de Silvestro es indispensable hoy
-          </h2>
-
-          <p className="text-gray-600 mb-3">
-            En un mundo que corre cada vez más rápido, existe un lugar donde el tiempo se detiene
-            y la vida encuentra espacio para renacer: La Casa de Silvestro, un santuario felino
-            creado para ofrecer una segunda oportunidad a gatos sin hogar…
-          </p>
-
-          <Link href="/blog/articulos/santuario-felino-villalonga-la-casa-de-silvestro">
-            <a className="text-blue-600 font-semibold">Leer más →</a>
-          </Link>
-        </div>
-
-      </article>
-
-    </main>
+              <div>
+                <Link
+                  href={`/blog/articulos/${post.slug}`}
+                  className="text-green-700 font-semibold hover:underline"
+                >
+                  Leer más →
+                </Link>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
   );
 }
