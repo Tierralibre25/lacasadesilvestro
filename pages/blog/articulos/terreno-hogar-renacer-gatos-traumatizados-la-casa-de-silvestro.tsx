@@ -4,27 +4,26 @@ import Head from "next/head";
 const articleUrl =
   "https://www.lacasadesilvestro.com/blog/articulos/terreno-hogar-renacer-gatos-traumatizados-la-casa-de-silvestro";
 
-export default function TerrenoHogarGatosTraumatizados() {
-  export default function SantuarioFelinoVillalonga() {
-  const handleInstagramClick = async (e: any) => {
+export default function TerrenoHogarRenacerGatosTraumatizados() {
+  const handleInstagramClick = async (
+    e: React.MouseEvent<HTMLAnchorElement>
+  ) => {
     e.preventDefault();
 
     try {
       if (
         typeof navigator !== "undefined" &&
-        (navigator as any).clipboard &&
-        (navigator as any).clipboard.writeText
+        navigator.clipboard &&
+        navigator.clipboard.writeText
       ) {
-        await (navigator as any).clipboard.writeText(articleUrl);
+        await navigator.clipboard.writeText(articleUrl);
         alert(
           "Link copiado. Ahora pégalo en tu historia o en la bio de Instagram 🐾"
         );
       }
-
-      if (typeof window !== "undefined") {
-        window.open("https://instagram.com", "_blank");
-      }
     } catch (_err) {
+      // ignoriamo eventuali errori di copia
+    } finally {
       if (typeof window !== "undefined") {
         window.open("https://instagram.com", "_blank");
       }
@@ -69,13 +68,13 @@ export default function TerrenoHogarGatosTraumatizados() {
         </h1>
 
         <p className="text-sm text-gray-600 mb-6">
-          Publicado el 4 de diciembre de 2025
+          Publicado el 3 de diciembre de 2025
         </p>
 
         {/* IMAGEN DEL ARTÍCULO */}
         <img
           src="/images/blog/articolo_2.jpg"
-          alt="Grupo de gatos en libertad en un refugio felino"
+          alt="Grupo de gatos en libertad en La Casa de Silvestro"
           className="w-full rounded-xl shadow-lg mb-8"
         />
 
@@ -241,15 +240,18 @@ export default function TerrenoHogarGatosTraumatizados() {
               <img src="/icons/x.svg" alt="X" className="w-5 h-5" />
             </a>
 
-           {/* Instagram – copia link y abre la app */}
-<a
-  href="https://instagram.com"
-  onClick={handleInstagramClick}
-  className="w-11 h-11 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow hover:opacity-90 transition cursor-pointer"
->
-  <img src="/icons/instagram.svg" alt="Instagram" className="w-5 h-5" />
-</a>
-
+            {/* Instagram – copiar link y abrir la app */}
+            <a
+              href="https://instagram.com"
+              onClick={handleInstagramClick}
+              className="w-11 h-11 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow hover:opacity-90 transition cursor-pointer"
+            >
+              <img
+                src="/icons/instagram.svg"
+                alt="Instagram"
+                className="w-5 h-5"
+              />
+            </a>
 
             {/* Email */}
             <a
