@@ -68,7 +68,7 @@ export default function TerrenoHogarRenacerGatosTraumatizados() {
         </h1>
 
         <p className="text-sm text-gray-600 mb-6">
-          Publicado el 3 de diciembre de 2025
+          Publicado el 4 de diciembre de 2025
         </p>
 
         {/* IMAGEN DEL ARTÍCULO */}
