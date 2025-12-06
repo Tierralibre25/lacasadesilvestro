@@ -18,6 +18,15 @@ const posts = [
     excerpt:
       "Cómo un terreno sin jaulas y en plena naturaleza permite que gatos traumatizados vuelvan a confiar, jugar y vivir sin miedo.",
     image: "/images/blog/articolo_2.jpg",
+    date: "3 de diciembre de 2025",
+  },
+  {
+    slug: "beneficios-concretos-proyecto-casa-de-silvestro-vida-gatos",
+    title:
+      "Los beneficios concretos del proyecto La Casa de Silvestro para la vida de los gatos",
+    excerpt:
+      "Un santuario felino rural donde los gatos viven libres, protegidos y con cuidados continuos. Descubre los beneficios reales para su vida y bienestar.",
+    image: "/images/blog/articolo_3.jpg",
     date: "4 de diciembre de 2025",
   },
 ];
