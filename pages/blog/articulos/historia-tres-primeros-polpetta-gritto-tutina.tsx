@@ -67,7 +67,7 @@ export default function HistoriaTresPrimerosPolpettaGrittoTutina() {
         </h1>
 
         <p className="text-sm text-gray-600 mb-6">
-          Publicado el 4 de diciembre de 2025
+          Publicado el 9 de diciembre de 2025
         </p>
 
         {/* IMAGEN DEL ARTÍCULO */}
