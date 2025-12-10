@@ -3,22 +3,22 @@ import Link from "next/link";
 
 const posts = [
   {
-    slug: "santuario-felino-villalonga-la-casa-de-silvestro",
+    slug: "por-que-santuario-natural-mejor-lugar-gato-colonia",
     title:
-      "Santuario felino en Villalonga: por qué La Casa de Silvestro es indispensable hoy",
+      "Por qué un santuario natural es el mejor lugar para un gato de colonia",
     excerpt:
-      "Por qué hoy los santuarios felinos son más necesarios que nunca y cómo La Casa de Silvestro ofrece un hogar seguro y ético a decenas de gatos.",
-    image: "/images/blog/articolo_1.jpg",
-    date: "3 de diciembre de 2025",
+      "Libertad en seguridad, menos estrés y un entorno que respeta la naturaleza felina. Descubre por qué un santuario natural es ideal para gatos de colonia.",
+    image: "/images/blog/articolo_5_a.jpg",
+    date: "10 de diciembre de 2025",
   },
   {
-    slug: "terreno-hogar-renacer-gatos-traumatizados-la-casa-de-silvestro",
+    slug: "historia-tres-primeros-polpetta-gritto-tutina",
     title:
-      "Cuando un terreno se convierte en hogar: el renacer de los gatos traumatizados en La Casa de Silvestro",
+      "Los tres primeros: la historia de Polpetta, Gritto y Tutina, los gatitos que marcaron el inicio del santuario",
     excerpt:
-      "Cómo un terreno sin jaulas y en plena naturaleza permite que gatos traumatizados vuelvan a confiar, jugar y vivir sin miedo.",
-    image: "/images/blog/articolo_2.jpg",
-    date: "4 de diciembre de 2025",
+      "La historia de los primeros tres gatitos acogidos en La Casa de Silvestro, origen vivo del santuario y de muchas nuevas vidas.",
+    image: "/images/blog/articolo_4.jpg",
+    date: "9 de diciembre de 2025",
   },
   {
     slug: "beneficios-concretos-proyecto-casa-de-silvestro-vida-gatos",
@@ -30,13 +30,22 @@ const posts = [
     date: "5 de diciembre de 2025",
   },
   {
-    slug: "historia-tres-primeros-polpetta-gritto-tutina",
+    slug: "terreno-hogar-renacer-gatos-traumatizados-la-casa-de-silvestro",
     title:
-      "Los tres primeros: la historia de Polpetta, Gritto y Tutina, los gatitos que marcaron el inicio del santuario",
+      "Cuando un terreno se convierte en hogar: el renacer de los gatos traumatizados en La Casa de Silvestro",
     excerpt:
-      "La historia de los primeros tres gatitos acogidos en La Casa de Silvestro, origen vivo del santuario y de muchas nuevas vidas.",
-    image: "/images/blog/articolo_4.jpg",
-    date: "9 de diciembre de 2025",
+      "Cómo un terreno sin jaulas y en plena naturaleza permite que gatos traumatizados vuelvan a confiar, jugar y vivir sin miedo.",
+    image: "/images/blog/articolo_2.jpg",
+    date: "4 de diciembre de 2025",
+  },
+  {
+    slug: "santuario-felino-villalonga-la-casa-de-silvestro",
+    title:
+      "Santuario felino en Villalonga: por qué La Casa de Silvestro es indispensable hoy",
+    excerpt:
+      "Por qué los santuarios felinos son más necesarios que nunca y cómo La Casa de Silvestro ofrece un hogar seguro y ético a decenas de gatos.",
+    image: "/images/blog/articolo_1.jpg",
+    date: "3 de diciembre de 2025",
   },
 ];
 
