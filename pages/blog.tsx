@@ -18,7 +18,7 @@ const posts = [
     excerpt:
       "Cómo un terreno sin jaulas y en plena naturaleza permite que gatos traumatizados vuelvan a confiar, jugar y vivir sin miedo.",
     image: "/images/blog/articolo_2.jpg",
-    date: "4 de diciembre de 2025",
+    date: "3 de diciembre de 2025",
   },
   {
     slug: "beneficios-concretos-proyecto-casa-de-silvestro-vida-gatos",
@@ -27,7 +27,16 @@ const posts = [
     excerpt:
       "Un santuario felino rural donde los gatos viven libres, protegidos y con cuidados continuos. Descubre los beneficios reales para su vida y bienestar.",
     image: "/images/blog/articolo_3.jpg",
-    date: "5 de diciembre de 2025",
+    date: "4 de diciembre de 2025",
+  },
+  {
+    slug: "historia-tres-primeros-polpetta-gritto-tutina",
+    title:
+      "Los tres primeros: la historia de Polpetta, Gritto y Tutina, los gatitos que marcaron el inicio del santuario",
+    excerpt:
+      "La historia de los primeros tres gatitos acogidos en La Casa de Silvestro, origen vivo del santuario y de muchas nuevas vidas.",
+    image: "/images/blog/articolo_4.jpg",
+    date: "4 de diciembre de 2025",
   },
 ];
 
