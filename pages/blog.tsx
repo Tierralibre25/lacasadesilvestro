@@ -3,13 +3,22 @@ import Link from "next/link";
 
 const posts = [
   {
+    slug: "diario-santuario-pequenas-cosas-equilibrio",
+    title:
+      "DIARIO DEL SANTUARIO — Las pequeñas cosas que mantienen todo en equilibrio",
+    excerpt:
+      "Un día normal en La Casa de Silvestro: observación, rutina y atención constante. Hoy el equilibrio se sostiene.",
+    image: "/images/blog/articolo_7.jpg",
+    date: "16 de diciembre de 2025",
+  },
+  {
     slug: "por-que-santuario-natural-mejor-lugar-gato-colonia",
     title:
       "Por qué un santuario natural es el mejor lugar para un gato de colonia",
     excerpt:
       "Libertad en seguridad, menos estrés y un entorno que respeta la naturaleza felina. Descubre por qué un santuario natural es ideal para gatos de colonia.",
-    image: "/images/blog/articolo_5_a.jpg",
-    date: "10 de diciembre de 2025",
+    image: "/images/blog/articolo_6_a.jpg",
+    date: "15 de diciembre de 2025",
   },
   {
     slug: "historia-tres-primeros-polpetta-gritto-tutina",
