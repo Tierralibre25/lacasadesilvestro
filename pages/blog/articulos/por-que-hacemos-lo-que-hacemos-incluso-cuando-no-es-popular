@@ -1,0 +1,162 @@
+import React from "react";
+import Head from "next/head";
+
+const articleUrl =
+  "https://www.lacasadesilvestro.com/blog/articulos/por-que-hacemos-lo-que-hacemos-incluso-cuando-no-es-popular";
+
+export default function PorQueHacemosLoQueHacemos() {
+  return (
+    <>
+      <Head>
+        <title>
+          Por qué hacemos lo que hacemos (incluso cuando no es popular)
+        </title>
+
+        <meta
+          name="description"
+          content="La filosofía de La Casa de Silvestro: proteger a los gatos con responsabilidad, incluso cuando no es lo más popular o visible."
+        />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="La Casa de Silvestro" />
+        <meta
+          property="og:title"
+          content="Por qué hacemos lo que hacemos (incluso cuando no es popular)"
+        />
+        <meta
+          property="og:description"
+          content="El bienestar real de los gatos no siempre es espectacular, pero es lo correcto."
+        />
+        <meta property="og:url" content={articleUrl} />
+      </Head>
+
+      <div className="max-w-3xl mx-auto px-4 py-12">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          Por qué hacemos lo que hacemos (incluso cuando no es popular)
+        </h1>
+
+        <p className="text-sm text-gray-600 mb-6">
+          Publicado el 18 de diciembre de 2025
+        </p>
+
+        {/* IMAGEN OPCIONAL
+        <img
+          src="/images/blog/articolo_9.jpg"
+          alt="Ilustración educativa sobre protección felina"
+          className="w-full rounded-xl shadow-lg mb-8"
+        />
+        */}
+
+        <div className="space-y-6 text-gray-800 leading-relaxed">
+          <p>
+            Hablar de protección felina a menudo significa ir contracorriente.
+            No todas las decisiones son “bonitas de ver”, no todas funcionan en
+            redes sociales, no todas generan aprobación inmediata.
+          </p>
+
+          <p>Y aun así, son las correctas.</p>
+
+          <p>
+            En La Casa de Silvestro el trabajo diario no nace de la necesidad de
+            gustar, sino de la necesidad de hacer lo que realmente necesitan los
+            gatos.
+          </p>
+
+          <h2 className="text-2xl font-semibold">
+            🧭 El bienestar antes que la imagen
+          </h2>
+
+          <p>No perseguimos historias efectistas.</p>
+          <p>No convertimos a cada gato en un símbolo.</p>
+          <p>No forzamos situaciones para que sean “contables”.</p>
+
+          <p>El bienestar real suele ser silencioso:</p>
+
+          <ul className="list-disc list-inside space-y-1">
+            <li>rutinas estables</li>
+            <li>pocos cambios</li>
+            <li>intervenciones específicas</li>
+            <li>decisiones meditadas</li>
+          </ul>
+
+          <p>
+            Si todo parece “normal”, significa que estamos trabajando bien.
+          </p>
+
+          <h2 className="text-2xl font-semibold">
+            🐾 No todos los gatos deben ser iguales
+          </h2>
+
+          <p>
+            Uno de los errores más comunes es pensar que el bienestar tiene una
+            sola forma. No es así.
+          </p>
+
+          <p>Hay gatos que:</p>
+
+          <ul className="list-disc list-inside space-y-1">
+            <li>no buscan contacto</li>
+            <li>no quieren ser cogidos en brazos</li>
+            <li>no son adoptables</li>
+            <li>están bien sin atención humana</li>
+          </ul>
+
+          <p>
+            Respetarlos significa no obligarlos a ser lo que no son.
+          </p>
+
+          <h2 className="text-2xl font-semibold">
+            ⚖️ Decir que no también forma parte de la protección
+          </h2>
+
+          <p>Decir “sí” a todo es fácil.</p>
+          <p>Decir “no” cuando es necesario es mucho más difícil.</p>
+
+          <ul className="list-disc list-inside space-y-1">
+            <li>No a rescates innecesarios</li>
+            <li>No a integraciones forzadas</li>
+            <li>No a soluciones emocionales pero equivocadas</li>
+          </ul>
+
+          <p>
+            Cada “no” es una elección de responsabilidad, no de cierre.
+          </p>
+
+          <h2 className="text-2xl font-semibold">
+            🌱 Una visión a largo plazo
+          </h2>
+
+          <p>
+            La protección felina no se basa en emergencias constantes, sino en:
+          </p>
+
+          <ul className="list-disc list-inside space-y-1">
+            <li>prevención</li>
+            <li>esterilización</li>
+            <li>gestión</li>
+            <li>observación</li>
+          </ul>
+
+          <p>
+            Es un trabajo que no produce resultados inmediatos, pero reduce el
+            sufrimiento con el tiempo.
+          </p>
+
+          <p>
+            Esta es nuestra dirección, incluso cuando no es la más fácil de
+            explicar.
+          </p>
+
+          <h2 className="text-2xl font-semibold">🐈 Conclusión</h2>
+
+          <p>
+            No intentamos convencer a todo el mundo. Intentamos hacer lo correcto
+            para los gatos, cada día.
+          </p>
+
+          <p className="font-semibold">Incluso cuando no hace ruido.</p>
+        </div>
+      </div>
+    </>
+  );
+}
