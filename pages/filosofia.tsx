@@ -1,5 +1,5 @@
 import NuestraFilosofia from "../components/NuestraFilosofia";
 
-export default function FilosofiaPage() {
+export default function filosofiaPage() {
   return <NuestraFilosofia />;
 }
