@@ -3,6 +3,14 @@ import Link from "next/link";
 
 const posts = [
   {
+    slug: "por-que-no-es-un-refugio-clasico",
+    title: "Por qué La Casa de Silvestro no es un refugio “clásico”",
+    excerpt:
+      "La Casa de Silvestro no existe para acumular gatos, sino para tutelar situaciones. Un modelo basado en equilibrio, prevención y continuidad.",
+    image: "/images/blog/articolo_4_genn.jpg",
+    date: "4 de enero de 2026",
+  },
+  {
     slug: "ayudar-gatos-callejeros-no-siempre-llevarlos-solucion",
     title:
       "Ayudar de verdad a los gatos callejeros: por qué no siempre llevárselos es la solución",
@@ -70,7 +78,7 @@ const posts = [
 export default function BlogPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
         Nuestro Blog
       </h1>
 
