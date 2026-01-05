@@ -1,13 +1,7 @@
+import React from "react";
+import Link from "next/link";
+
 const posts = [
-  {
-    slug: "por-que-no-es-un-refugio-clasico",
-    title:
-      "Por qué La Casa de Silvestro no es un refugio “clásico”",
-    excerpt:
-      "La Casa de Silvestro no existe para acumular gatos, sino para tutelar situaciones. Un modelo basado en equilibrio, prevención y continuidad.",
-    image: "/images/blog/articolo_4_genn.jpg",
-    date: "4 de enero de 2026",
-  },
   {
     slug: "ayudar-gatos-callejeros-no-siempre-llevarlos-solucion",
     title:
@@ -72,3 +66,49 @@ const posts = [
     date: "3 de diciembre de 2025",
   },
 ];
+
+export default function BlogPage() {
+  return (
+    <div className="max-w-5xl mx-auto px-4 py-12">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+        Nuestro Blog
+      </h1>
+
+      <div className="space-y-8">
+        {posts.map((post) => (
+          <article
+            key={post.slug}
+            className="bg-white rounded-2xl shadow flex flex-col md:flex-row overflow-hidden"
+          >
+            <div className="md:w-1/3">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="md:w-2/3 p-6 flex flex-col justify-between">
+              <div>
+                <p className="text-xs text-gray-500 mb-2">{post.date}</p>
+                <h2 className="text-xl md:text-2xl font-semibold mb-3">
+                  {post.title}
+                </h2>
+                <p className="text-gray-700 mb-4">{post.excerpt}</p>
+              </div>
+
+              <div>
+                <Link
+                  href={`/blog/articulos/${post.slug}`}
+                  className="text-green-700 font-semibold hover:underline"
+                >
+                  Leer más →
+                </Link>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
