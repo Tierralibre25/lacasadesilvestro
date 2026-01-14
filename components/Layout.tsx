@@ -1,12 +1,16 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const router = useRouter();
+  const isHome = router.pathname === "/";
+
   return (
     <>
       <Head>
@@ -43,15 +47,26 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div className="min-h-screen bg-cream text-gray-900 flex flex-col">
         {/* HEADER */}
         <header className="p-4 flex justify-between items-center bg-cream">
-          {/* logo -> home */}
-          <Link
-            href="/"
-            className="text-xl font-bold text-green-700 hover:underline"
-          >
-            TIERRA LIBRE
-          </Link>
+          {/* LOGO / TIERRA LIBRE */}
+          {isHome ? (
+            <a
+              href="https://www.tierralibre.org"
+              target="_blank"
+              rel="noreferrer"
+              className="text-xl font-bold text-green-700 hover:underline"
+            >
+              TIERRA LIBRE
+            </a>
+          ) : (
+            <Link
+              href="/"
+              className="text-xl font-bold text-green-700 hover:underline"
+            >
+              TIERRA LIBRE
+            </Link>
+          )}
 
-          {/* barra di navigazione */}
+          {/* NAV */}
           <nav className="space-x-4 text-sm md:text-base">
             <Link href="/nuestra-filosofia" className="hover:underline">
               Nuestra Filosofía
@@ -71,10 +86,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </nav>
         </header>
 
-        {/* CONTENUTO PRINCIPALE */}
+        {/* CONTENIDO */}
         <main className="flex-1">{children}</main>
 
-        {/* FOOTER SEMPLICE */}
+        {/* FOOTER */}
         <footer className="py-6 text-center text-xs text-gray-500">
           © {new Date().getFullYear()} Cooperativa Tierra Libre
         </footer>
