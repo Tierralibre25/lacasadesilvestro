@@ -50,7 +50,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           {/* LOGO / TIERRA LIBRE */}
           {isHome ? (
             <a
-              href="https://www.tierralibre.org"
+              href="https://www.cooperativatierralibre.es"
               target="_blank"
               rel="noreferrer"
               className="text-xl font-bold text-green-700 hover:underline"
@@ -99,3 +99,4 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 };
 
 export default Layout;
+
